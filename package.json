@@ -1,5 +1,6 @@
 {
   "private": true,
+  "version": "0.51.3",
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
