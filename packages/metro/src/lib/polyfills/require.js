@@ -161,11 +161,6 @@ function metroRequire(moduleId: ModuleID | VerboseModuleNameForDev) {
         .map(id => modules[id].verboseName);
       // We want to show A -> B -> A:
       cycle.push(cycle[0]);
-      console.warn(
-        `Require cycle: ${cycle.join(' -> ')}\n\n` +
-          'Require cycles are allowed, but can result in uninitialized values. ' +
-          'Consider refactoring to remove the need for a cycle.',
-      );
     }
   }
 
